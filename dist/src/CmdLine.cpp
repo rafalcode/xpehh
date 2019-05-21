@@ -254,13 +254,11 @@ int CCmdLine::GetArgumentCount(const char *pSwitch)
 {
    int iArgumentCount = -1;
 
-   if (HasSwitch(pSwitch))
-   {
+   if(HasSwitch(pSwitch)) {
 	   CCmdLine::iterator theIterator;
 
       theIterator = find(pSwitch);
-	   if (theIterator!=end())
-      {
+	   if (theIterator!=end()) {
          iArgumentCount = (*theIterator).second.m_strings.size();
       }
    }
