@@ -43,7 +43,7 @@ void Ehhpop::readmap(const char in[])
         double gpos = atof(line.at(2).c_str());
         bool isanc = false;
         if (line.at(3)== line.at(4)) {
-            isanc = true;
+            isanc = true; // is ancestral i.e. allele is ref.
         }
         rs2gpos.insert(make_pair(rs, gpos));
         rs2pos.insert(make_pair(rs, ppos));

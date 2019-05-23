@@ -121,7 +121,8 @@
 #endif
 
 // tell the compiler to shut up
-#pragma warning(disable:4786)
+// Tut tut Mr. Pickrell!
+// #pragma warning(disable:4786)
 
 //#include <iostream> // you may need this
 #include <map>
